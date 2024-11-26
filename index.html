@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROA Distribution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">ROA Distribution</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#admin" id="admin-link">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to ROA Distribution</h2>
+            <p>Discover high-quality products at unbeatable prices!</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="product-list">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>ROA Distribution provides top-notch products to enhance your daily life. Shop with confidence and enjoy exceptional service.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any inquiries or support!</p>
+            <div class="manager-contact" id="manager-contact">
+                <p><strong>Manager Name:</strong> <span id="contact-name">John Doe</span></p>
+                <p><strong>Email:</strong> <span id="contact-email">manager@roadistribution.com</span></p>
+                <p><strong>Phone:</strong> <span id="contact-phone">+123-456-7890</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin" class="admin">
+        <div class="container">
+            <h2>Admin Panel</h2>
+            <!-- Admin Product Form -->
+            <form id="admin-form" style="display: none;">
+                <h3>Add a Product</h3>
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="text" id="product-price" placeholder="Product Price" required>
+                <textarea id="product-description" placeholder="Product Description" rows="4" required></textarea>
+                <input type="url" id="product-image" placeholder="Product Image URL" required>
+                <button type="submit">Add Product</button>
+            </form>
+
+            <!-- Admin Contact Information Update Form -->
+            <form id="contact-update-form" style="display: none;">
+                <h3>Update Contact Information</h3>
+                <input type="text" id="manager-name" placeholder="Manager Name" value="John Doe" required>
+                <input type="email" id="manager-email" placeholder="Manager Email" value="manager@roadistribution.com" required>
+                <input type="tel" id="manager-phone" placeholder="Manager Phone" value="+123-456-7890" required>
+                <button type="submit">Update Contact Information</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ROA Distribution. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
